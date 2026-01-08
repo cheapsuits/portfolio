@@ -123,6 +123,31 @@
   </div>
 </section>
 
+  <!-- Payment Section -->
+<section id="payment" class="bg-light py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title text-center fw-bold mb-4">Make a Payment</h3>
+
+            <form action="/process-payment" method="POST">
+              <!-- Name -->
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" name="name" required>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" name="email" required>
+              </div>
+
+              <!-
+
+
 <!-- Footer -->
 <footer class="bg-dark text-white py-4">
   <div class="container text-center">
