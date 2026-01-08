@@ -145,9 +145,48 @@
                 <input type="email" class="form-control" name="email" required>
               </div>
 
-              <!-
+              <!-- Payment Type -->
+              <div class="mb-3">
+                <label class="form-label">Payment For</label>
+                <select class="form-select" name="payment_for" required>
+                  <option value="">Select an option</option>
+                  <option value="commercial_rent">Commercial Rent</option>
+                  <option value="residential_rent">Residential Rent</option>
+                  <option value="renovation">Renovation Services</option>
+                </select>
+              </div>
 
+              <!-- Amount -->
+              <div class="mb-3">
+                <label class="form-label">Amount ($)</label>
+                <input type="number" class="form-control" name="amount" step="0.01" required>
+              </div>
 
+              <!-- Reference -->
+              <div class="mb-3">
+                <label class="form-label">Reference / Unit #</label>
+                <input type="text" class="form-control" name="reference">
+              </div>
+
+              <!-- Submit -->
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  Proceed to Payment
+                </button>
+              </div>
+
+              <p class="text-muted text-center mt-3 small">
+                Secure payment processing powered by our payment provider.
+              </p>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
 <!-- Footer -->
 <footer class="bg-dark text-white py-4">
   <div class="container text-center">
